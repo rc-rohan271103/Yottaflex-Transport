@@ -1,0 +1,6 @@
+case_id,anomaly_type,entity_type,expected_outcome,severity,description,validation_rule
+GT-001,CAPACITY_EXCEEDED,assignment,REJECT,HIGH,A proposed assignment would make the passenger count exceed the bus capacity.,assigned_passengers <= bus_capacity
+GT-002,ACCESSIBILITY_MISMATCH,assignment,REJECT,HIGH,A student requiring accessibility support is proposed for a bus without the required accessibility capability.,not student_needs_accessibility or bus_is_accessible
+GT-003,IMPOSSIBLE_TRAVEL_TIME,route_stop,FLAG,HIGH,A proposed route leg has a travel-time value that violates the configured plausibility rule.,travel_minutes >= minimum_plausible_minutes
+GT-004,INVALID_GUARDIAN_CONTACT,notification,BLOCK,HIGH,A notification to a guardian whose contact is marked invalid must not be sent.,guardian_contact_is_valid = 1
+GT-005,UNAUTHORIZED_ADDRESS_DISCLOSURE,address,BLOCK,HIGH,An address not authorized for disclosure must not be exposed to an unauthorized requester.,disclosure_authorized = 1 and requester_is_authorized = 1
