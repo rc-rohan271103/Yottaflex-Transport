@@ -11,7 +11,7 @@ env/
 !.env.example
 
 # Generated demo/test data
-data/generated/
+
 data/generated_test/
 /data/full_scale/submission_exports_v2/
 /data/full_scale/submission_exports_v3/

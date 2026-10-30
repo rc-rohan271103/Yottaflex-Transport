@@ -1,0 +1,13 @@
+USE yottaflex_transport;
+START TRANSACTION;
+UPDATE bus SET is_accessible = 1 WHERE bus_id = 'BUS-000001';
+UPDATE bus SET is_accessible = 1 WHERE bus_id = 'BUS-000002';
+UPDATE bus SET is_accessible = 1 WHERE bus_id = 'BUS-000003';
+UPDATE bus SET is_accessible = 1 WHERE bus_id = 'BUS-000004';
+UPDATE bus SET is_accessible = 1 WHERE bus_id = 'BUS-000005';
+UPDATE bus SET is_accessible = 0 WHERE bus_id = 'BUS-000006';
+UPDATE bus SET is_accessible = 0 WHERE bus_id = 'BUS-000007';
+UPDATE bus SET is_accessible = 0 WHERE bus_id = 'BUS-000008';
+UPDATE bus SET is_accessible = 0 WHERE bus_id = 'BUS-000009';
+UPDATE bus SET is_accessible = 0 WHERE bus_id = 'BUS-000010';
+COMMIT;
