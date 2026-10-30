@@ -13,6 +13,8 @@ env/
 # Generated demo/test data
 data/generated/
 data/generated_test/
+/data/full_scale/submission_exports_v2/
+/data/full_scale/submission_exports_v3/
 # Keep required full-scale and ground-truth submission artifacts unless intentionally excluded.
 
 # Testing and logs
